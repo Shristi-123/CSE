@@ -30,11 +30,11 @@ def check_password(password):
         tips.append("Include at least one special character.")
 
     if score >= 4:
-        return "Strong ✅", tips
+        return "Strong ", tips
     elif score >= 3:
-        return "Moderate 🔵", tips
+        return "Moderate ", tips
     else:
-        return "Weak ⚠️", tips
+        return "Weak ", tips
 
 def main():
     print("Password Strength Checker")
